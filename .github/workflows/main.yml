@@ -33,5 +33,5 @@ jobs:
           sudo docker build -t cicd-test .
           sudo docker stop cicd-test || true
           sudo docker rm cicd-test || true
-          sudo docker run -d --name cicd-test -p 80:80 my-app
+          sudo docker run -d --name cicd-test -p 80:80 cicd-test
         EOF
